@@ -10,12 +10,13 @@ export default function SalesPage() {
           <div className="font-serif text-xl font-bold text-brand-blue-dark">
             Tips de Marketing para Afiliados
           </div>
-          <a 
-            href="#comprar" 
-            className="bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-2.5 rounded-full font-medium transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20"
+          <button 
+            type="button"
+            onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-2.5 rounded-full font-medium transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20 cursor-pointer"
           >
             Obtener mi copia
-          </a>
+          </button>
         </div>
       </header>
 
@@ -719,9 +720,15 @@ export default function SalesPage() {
                 Pago único. Acceso inmediato. Formato digital compatible con todos tus dispositivos.
               </p>
 
-              <button className="w-full md:w-auto bg-brand-orange hover:bg-brand-orange-dark text-white text-xl font-bold px-12 py-5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-brand-orange/30 flex items-center justify-center gap-3 mx-auto">
+              {/* Enlace de pago principal de ClickBank */}
+              <a 
+                href="https://fcofrancis.pay.clickbank.net/?cbitems=7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full md:w-auto bg-brand-orange hover:bg-brand-orange-dark text-white text-xl font-bold px-12 py-5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-brand-orange/30 flex items-center justify-center gap-3 mx-auto"
+              >
                 ¡Quiero mi copia ahora! <ArrowRight />
-              </button>
+              </a>
 
               <div className="mt-8 flex items-center justify-center gap-6 text-slate-400">
                 <div className="flex items-center gap-1 text-xs uppercase tracking-tighter font-bold">
@@ -828,8 +835,9 @@ export default function SalesPage() {
                 No permitas que otro año pase viendo cómo otros construyen sus sueños mientras tú sigues atrapado en la indecisión. La inversión es mínima, el riesgo es nulo y la oportunidad es inmensa.
               </p>
               <button 
+                type="button"
                 onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-brand-blue-dark hover:bg-slate-800 text-white px-12 py-4 rounded-full font-bold transition-all shadow-xl"
+                className="bg-brand-blue-dark hover:bg-slate-800 text-white px-12 py-4 rounded-full font-bold transition-all shadow-xl cursor-pointer"
               >
                 Comenzar mi transformación por $9,99
               </button>
