@@ -720,20 +720,15 @@ export default function SalesPage() {
                 Pago único. Acceso inmediato. Formato digital compatible con todos tus dispositivos.
               </p>
 
-              {/* Enlace de pago principal de ClickBank (Oculto al pasar el ratón) */}
-              <form 
-                action="https://fcofrancis.pay.clickbank.net/?cbitems=7" 
-                method="GET" 
+              {/* Enlace de pago oficial de ClickBank (Cumple con las políticas de transparencia) */}
+              <a 
+                href="https://fcofrancis.pay.clickbank.net/?cbitems=7" 
                 target="_blank" 
-                className="inline-block w-full md:w-auto"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto bg-brand-orange hover:bg-brand-orange-dark text-white text-xl font-bold px-12 py-5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-brand-orange/30 flex items-center justify-center gap-3 mx-auto"
               >
-                <button 
-                  type="submit"
-                  className="w-full md:w-auto bg-brand-orange hover:bg-brand-orange-dark text-white text-xl font-bold px-12 py-5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-brand-orange/30 flex items-center justify-center gap-3 mx-auto cursor-pointer"
-                >
-                  ¡Quiero mi copia ahora! <ArrowRight />
-                </button>
-              </form>
+                ¡Quiero mi copia ahora! <ArrowRight />
+              </a>
 
               <div className="mt-8 flex items-center justify-center gap-6 text-slate-400">
                 <div className="flex items-center gap-1 text-xs uppercase tracking-tighter font-bold">
