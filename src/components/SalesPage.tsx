@@ -44,6 +44,9 @@ export default function SalesPage() {
               <img 
                 src="https://i.ibb.co/JWgtmkq3/5-tips-de-marketing-para-afiliados-ebook.png" 
                 alt="Portada del libro Tips de Marketing para Afiliados" 
+                width="600"
+                height="800"
+                fetchPriority="high"
                 className="w-full h-auto drop-shadow-2xl transform hover:rotate-2 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
